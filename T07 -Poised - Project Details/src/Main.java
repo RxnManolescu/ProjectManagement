@@ -216,17 +216,16 @@ public class Main {
 				scanner.next();
 			}
 			int projectNumber = scanner.nextInt();
-			scanner.nextLine(); // Consume the \n character left in the scanner
 			String projectName;
+			scanner.nextLine();
 			// Loop to allow customer to pick a customised project name, otherwise a project name will
 			// automatically be generated, made of the building type and the customer's name
 			while (true) {
 				System.out.println("Customise project name? yes or no?");
-				String nameChoice = scanner.next();
+				String nameChoice = scanner.nextLine();
 				if (nameChoice.equalsIgnoreCase("yes")) {
 					System.out.println(("Enter project name: "));
-					String tempName = scanner.nextLine();
-					projectName = tempName;
+					projectName = scanner.nextLine();
 					break;
 				}
 				else if (nameChoice.equalsIgnoreCase("no")) {
@@ -237,7 +236,6 @@ public class Main {
 					System.out.println("Option invalid!");
 				}
 			}
-			scanner.nextLine(); // Consume the \n character left in the scanner
 			System.out.println("Enter postal address: ");
 			String postalAddress = scanner.nextLine();
 			System.out.println("Enter ERF number: ");
