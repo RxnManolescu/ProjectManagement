@@ -1,4 +1,4 @@
-# Project Details
+# Project Management
 This program allows a company to keep track of its projects details.
 ## Description
 18.11.2022 - This is the initial version of this project that meets part of the project's requirements, as per the instructions given.
